@@ -30,8 +30,9 @@ body {
 .calendar input {
   border-radius: 4px;
   border: none;
-  padding: 4.5px 10px;
+  padding: 8% 10%;
     font-family: "Poetsen One", sans-serif;
+    font-size: 20px;
 }
 input:focus {
   outline: none;
@@ -40,7 +41,9 @@ input:focus {
 
     border: none;
     border-radius: 4px;
-    padding: 4.5px 10px;
+  padding: 8% 15%;
+
+    font-size: 20px;
     font-family: "Poetsen One", sans-serif;
     cursor: pointer;
 }
@@ -56,6 +59,34 @@ width: 50%;
     background-color: black;
     padding: 8% 7%;
     border-radius: 5px;
-    color: rgb(55, 53, 53);
+    text-align: center;
+    color: rgb(145, 137, 137);
     box-shadow: 7px 7px 15px rgb(26, 26, 26);
+}
+@media screen and (max-width: 768px){
+  body{
+    box-sizing: border-box;
+  }
+  .main-div{
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 10%;
+  }
+ 
+
+  .data-div{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .data-div div{
+    margin: 5% 0;
+  }
+  .calendar input{
+    padding: 7% 6%;
+  }
+  .calculate{
+    padding: 7% 10%;
+  }
 }
